@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital@1&family=Poppins&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- end Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        yellow: '#FECC02',
+                        black: '#131313',
+                        gary: '#4E4E4E',
+                    },
+                    fontFamily: {
+                        bebas: ["Bebas Neue", "cursive"],
+                        montserrat: ["Montserrat", "sans-serif"],
+
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--   <!-- navbar -->
+    <nav class="fixed top-0 right-0 left-0 bg-white">
+        <div class="md:flex h-24 justify-between items-center w-full max-w-7xl mx-auto">
+            <h1 class="text-2xl font-semibold font-bebas">Xo<span class="text-yellow">0X</span> Movie <span
+                    class="text-yellow underline decoration-black">Production</span>
+            </h1>
+            <ul class="mt-6 md:mt-0 flex text-lg gap-8 font-semibold font-montserrat">
+                <li>About us</li>
+                <li>Request</li>
+                <li>Movies</li>
+                <li>Web series</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class=" h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover">
+            <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+                <div class="font-bebas">
+                    <h2 class="text-white text-lg mb-3">Movie production studio</h2>
+                    <h1 class="text-3xl font-semibold text-white mb-3">Films MAde to</h1>
+                    <h1 class="text-5xl font-semibold text-yellow">Perfection</h1>
+                    <p class="font-bebas text-white max-w-lg mb-10 mt-3">The Co-Laboratory films are a unique
+                        collaboration
+                        between two teams of choreographers and filmmakers who create short dance films in a week,
+                        shortly before the annual San Francisco Dance Film Festival.!</p>
+                    <button class="font-bebas border-2 border-white p-2 text-yellow text-lg hover:border-yellow
+                        hover:rounded-xl hover:text-white transition-all ">Discover
+                        More</button>
+                </div>
+            </div>
+        </section>
+        <!-- About us -->
+        <section class="py-40 mx-auto md:m-10">
+            <div class="border-2  rounded border-black w-full max-w-7xl mx-auto">
+                <div class="md:flex p-5">
+                    <!-- img -->
+                    <div class="w-full md:w-1/2  h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover rounded ">
+
+                    </div>
+                    <!-- text -->
+                    <div class=" w-full md:w-1/2 p-5 font-bebas">
+                        <h5 class="text-xl mb-3">ABOUT <span class="text-yellow underline decoration-black">US</span>
+                        </h5>
+                        <h1 class="text-5xl">FIlming <span
+                                class="text-yellow underline decoration-black">Experience</span></h1>
+                        <h1 class="text-5xl mb-6">Just Got better</h1>
+                        <p class="mb-10">The intention is not to create the perfect film, but to bring professional
+                            artists into the
+                            atmosphere of a laboratory, one that challenges them to think collaboratively and
+                            <span class="text-lg text-gray font-semibold"> explore
+                                possibilities for expression outside their fields. Funded in part by the Kenneth Rainin
+                                Foundation, the Fleishhacker Foundation, and the Zellerbach Family Foundation, the
+                                Co-Laboratory is an annual event</span>
+                            to inspire and support local artists of different
+                            disciplines to collaboratively create dance films for local and global audiences.
+                        </p>
+                        <button class="font-bebas border-2 border-black rounded p-2 text-black text-lg hover:border-yellow
+                        hover:rounded-xl hover:text-black transition-all ">Discover
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
